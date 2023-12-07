@@ -1,0 +1,23 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import Theme from "./theme";
+
+<Meta title="Theme/Colors" />
+
+<ColorPalette>
+  <ColorItem 
+    title="Mon Yellow"
+    colors={{ monYellow: Theme.colors.monYellow }} 
+  />
+  <ColorItem
+    title="Gray"
+    colors={{
+      gray100: Theme.colors.gray100,
+      gray80: Theme.colors.gray80,
+      gray60: Theme.colors.gray60,
+      gray40: Theme.colors.gray40,
+      gray20: Theme.colors.gray20,
+      gray10: Theme.colors.gray10,
+      gray00: Theme.colors.gray00,
+    }}
+  />
+</ColorPalette>
