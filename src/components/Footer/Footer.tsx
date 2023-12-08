@@ -4,7 +4,6 @@ import IconFacebook from "../../../public/assets/IconFacebook";
 import IconInstagram from "../../../public/assets/IconInstagram";
 import IconTwitter from "../../../public/assets/IconTwitter";
 import IconYoutube from "../../../public/assets/IconYoutube";
-import LogoMonito from "../../../public/assets/LogoMonito";
 import * as S from "./Footer.style";
 import React from "react";
 
@@ -67,7 +66,7 @@ export default function Footer() {
       </S.Informations>
       <S.FooterTerms>
         <p>© 2022 Monito. All rights reserved.</p>
-        <LogoMonito />
+        <h1>LOGO</h1>
         <S.Terms>
           <ul>
             {termsLinks.map((term, index) => (
