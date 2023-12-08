@@ -4,9 +4,8 @@ import IconFacebook from "../../../public/assets/IconFacebook";
 import IconInstagram from "../../../public/assets/IconInstagram";
 import IconTwitter from "../../../public/assets/IconTwitter";
 import IconYoutube from "../../../public/assets/IconYoutube";
-import logo from "../../../public/assets/logo.svg";
+import LogoMonito from "../../../public/assets/LogoMonito";
 import * as S from "./Footer.style";
-import Image from "next/image";
 import React from "react";
 
 const socialMediaLinks = [
@@ -68,7 +67,7 @@ export default function Footer() {
       </S.Informations>
       <S.FooterTerms>
         <p>© 2022 Monito. All rights reserved.</p>
-        <Image src={logo} alt="Logo" />
+        <LogoMonito />
         <S.Terms>
           <ul>
             {termsLinks.map((term, index) => (
