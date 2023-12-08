@@ -1,19 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import faceboook from "../../../public/assets/facebook.svg";
-import instagram from "../../../public/assets/instagram.svg";
-import twitter from "../../../public/assets/twitter .svg";
-import youtube from "../../../public/assets/youtube.svg";
+import IconFacebook from "../../../public/assets/IconFacebook";
+import IconInstagram from "../../../public/assets/IconInstagram";
+import IconTwitter from "../../../public/assets/IconTwitter";
+import IconYoutube from "../../../public/assets/IconYoutube";
 import logo from "../../../public/assets/logo.svg";
 import * as S from "./Footer.style";
 import Image from "next/image";
 import React from "react";
 
 const socialMediaLinks = [
-  { icon: faceboook, alt: "Facebook", url: "#" },
-  { icon: instagram, alt: "Instagram", url: "#" },
-  { icon: twitter, alt: "Twitter", url: "#" },
-  { icon: youtube, alt: "Youtube", url: "#" },
+  { icon: <IconFacebook />, alt: "Facebook", url: "#" },
+  { icon: <IconInstagram />, alt: "Instagram", url: "#" },
+  { icon: <IconTwitter />, alt: "Twitter", url: "#" },
+  { icon: <IconYoutube />, alt: "Youtube", url: "#" },
 ];
 
 const footerLinks = [
@@ -58,7 +58,7 @@ export default function Footer() {
               {socialMediaLinks.map((socialMedia, index) => (
                 <li key={index}>
                   <a href={socialMedia.url}>
-                    <Image src={socialMedia.icon} alt={socialMedia.alt} />
+                    {socialMedia.icon}
                   </a>
                 </li>
               ))}
